@@ -1,4 +1,4 @@
-
+To compile this code, run the following:
 
 ```bash
 conda create -n qt qt
@@ -12,25 +12,17 @@ sed -i '' 's/QT += xml/QT += xml widgets/g' clustalx.pro
 qmake
 make
 
-mkdir App
-cp col*xml clustalx.hlp App/
-cp clustalx.app/Contents/MacOS/clustalx App/
+mkdir bin
+cp col*xml clustalx.hlp bin/
+cp clustalx.app/Contents/MacOS/clustalx bin/
 
-install_name_tool -change @rpath/libQt5Widgets.5.dylib $CONDA_PREFIX/lib/libQt5Widgets.5.dylib App/clustalx
-install_name_tool -change @rpath/libQt5Gui.5.dylib $CONDA_PREFIX/lib/libQt5Gui.5.dylib App/clustalx
-install_name_tool -change @rpath/libQt5Xml.5.dylib $CONDA_PREFIX/lib/libQt5Xml.5.dylib App/clustalx
-install_name_tool -change @rpath/libQt5Core.5.dylib $CONDA_PREFIX/lib/libQt5Core.5.dylib App/clustalx
-
-App/clustalx
+install_name_tool -change @rpath/libQt5Widgets.5.dylib $CONDA_PREFIX/lib/libQt5Widgets.5.dylib bin/clustalx
+install_name_tool -change @rpath/libQt5Gui.5.dylib $CONDA_PREFIX/lib/libQt5Gui.5.dylib bin/clustalx
+install_name_tool -change @rpath/libQt5Xml.5.dylib $CONDA_PREFIX/lib/libQt5Xml.5.dylib bin/clustalx
+install_name_tool -change @rpath/libQt5Core.5.dylib $CONDA_PREFIX/lib/libQt5Core.5.dylib bin/clustalx
 ```
 
-
-
-
-
-
-
-
+Finally, to run the code, just run `bin/clustalx`.
 
 
 
