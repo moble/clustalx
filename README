@@ -1,13 +1,8 @@
-To compile this code, run the following:
+To compile this code, download it, unzip it, and run the following from the top-level directory of the unzipped code:
 
 ```bash
 conda create -n qt qt
 conda activate qt
-
-sed -i '' 's/include <QtGui>/include <QtWidgets>/g' *.cpp
-sed -i '' 's/toAscii/toLatin1/g' *.cpp
-sed -i '' $'s/#include <stdexcept>/#include <string>\\\n#include <stdexcept>/g' clustalW/general/VectorOutOfRange.h
-sed -i '' 's/QT += xml/QT += xml widgets/g' clustalx.pro
 
 qmake
 make
@@ -24,6 +19,17 @@ install_name_tool -change @rpath/libQt5Core.5.dylib $CONDA_PREFIX/lib/libQt5Core
 
 Finally, to run the code, just run `bin/clustalx`.
 
+
+# Changes relative to official release
+
+I just ran these commands to update for Qt 5:
+
+```bash
+sed -i '' 's/include <QtGui>/include <QtWidgets>/g' *.cpp
+sed -i '' 's/toAscii/toLatin1/g' *.cpp
+sed -i '' $'s/#include <stdexcept>/#include <string>\\\n#include <stdexcept>/g' clustalW/general/VectorOutOfRange.h
+sed -i '' 's/QT += xml/QT += xml widgets/g' clustalx.pro
+```
 
 
 # Old README
