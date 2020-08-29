@@ -16,7 +16,7 @@
 #include <ctime>
 #include <iomanip>
 #include <sstream>
-#include <QtGui>
+#include <QtWidgets>
 #include "PSPrinter.h"
 #include "ColorFileXmlParser.h"
 #include "clustalW/general/userparams.h"
@@ -594,7 +594,7 @@ void PSPrinter::printHeaderLine(ofstream *psOutFile, int ix, int fr, int lr)
     {
         psX = blockLeft + (i - fr) * CHARWIDTH; 
         (*psOutFile) << "(";
-        (*psOutFile) << data->seqHeader[ix][i].toAscii();
+        (*psOutFile) << data->seqHeader[ix][i].toLatin1();
         (*psOutFile) << ") ";
         (*psOutFile) << psX << " " << psY << " " << psX << " " 
                      << psY << " 1.0 1.0 1.0 color_inv\n";

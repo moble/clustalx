@@ -18,7 +18,7 @@
 #include <QRadioButton>
 #include <QMessageBox>
 #include <QHBoxLayout>
-#include <QtGui>
+#include <QtWidgets>
 #include "clustalW/general/userparams.h"
 #include "clustalW/substitutionMatrix/globalmatrix.h"
 #include "FileDialog.h"

@@ -16,7 +16,7 @@
 #include <QTextEdit>
 #include <iostream>
 #include <fstream>
-#include <QtGui>
+#include <QtWidgets>
 #include "Resources.h"
 
 const string HelpDisplayWidget::helpFileName = "clustalx.hlp";

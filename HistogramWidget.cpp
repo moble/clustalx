@@ -21,7 +21,7 @@
  ****************************************************************************/
 
 #include "HistogramWidget.h"
-#include <QtGui>
+#include <QtWidgets>
 #include <QImage>
 //#include <QPixmap>
 #include <QPoint>

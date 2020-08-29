@@ -60,7 +60,7 @@
  *****************************************************************************/
 
 
-#include <QtGui>
+#include <QtWidgets>
 #include <QFile>
 #include <QTextStream>
 #include "AlignmentViewerWidget.h"

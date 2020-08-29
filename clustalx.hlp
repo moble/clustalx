@@ -1,5 +1,5 @@
 
-This is the on-line help file for Clustal X (version 2.0 or greater).
+This is the on-line help file for Clustal X (version 2.0.1 or greater).
 
 It should be named or defined as:
     clustalx.hlp
@@ -11,7 +11,7 @@ Julie Thompson/Francois Jeanmougin   IGBMC, Strasbourg, France.
 
 >>HELP G <<
 <H3>
-                    General help for CLUSTAL X (2.0)
+                    General help for CLUSTAL X (2.0.1)
 </H3>
 
 <P>
@@ -2023,7 +2023,7 @@ Version 2 of  ClustalW and ClustalX is described in:
 Larkin,M.A., Blackshields, G., Brown, N.P., Chenna, R., McGettigan, P.A.,
 McWilliam, H., Valentin, F., Wallace, I.M., Wilm, A., Lopez, R.,
 Thompson, J.D., Gibson, T.J., Higgins, D.G. (2007)
-Clustal W and Clustal X version 2.0. Bioinformatics, 23:2947-2948.
+Clustal W and Clustal X version 2.0.1. Bioinformatics, 23:2947-2948.
 </P>
 
 

@@ -45,7 +45,7 @@
  *
  ****************************************************************************/
 
-#include <QtGui>
+#include <QtWidgets>
 #include "AlignmentWidget.h"
 #include "clustalW/general/userparams.h"
 #include "ClustalQtParams.h"

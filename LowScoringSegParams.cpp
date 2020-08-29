@@ -12,7 +12,7 @@
 #include <QHBoxLayout>
 #include <QSizePolicy>
 #include <QComboBox>
-#include <QtGui>
+#include <QtWidgets>
 #include <QLabel>
 #include <QButtonGroup>
 #include <QLineEdit>

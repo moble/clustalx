@@ -4,7 +4,7 @@
 #include <QGridLayout>
 #include <QSizePolicy>
 #include <QComboBox>
-#include <QtGui>
+#include <QtWidgets>
 #include <QLabel>
 #include <QCheckBox>
 #include "TreeFormatOptions.h"

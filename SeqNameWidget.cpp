@@ -55,7 +55,7 @@
  * 
  ****************************************************************************/
 
-#include <QtGui>
+#include <QtWidgets>
 #include "SeqNameWidget.h"
 #include "KeyController.h" //- nige
 #include "clustalW/alignment/Alignment.h"

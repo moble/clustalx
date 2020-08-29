@@ -87,7 +87,7 @@
  *
  ****************************************************************************/
 
-#include <QtGui>
+#include <QtWidgets>
 #include <QPixmap>
 #include <QFile>
 #include <iostream>

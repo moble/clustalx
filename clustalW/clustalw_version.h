@@ -3,7 +3,7 @@
 
 #define CLUSTALW_NAME "ClustalW"
 
-#define CLUSTALW_VERSION "2.1"
+#define CLUSTALW_VERSION "2.1.1"
 
 #endif
 

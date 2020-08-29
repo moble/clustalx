@@ -154,8 +154,8 @@ QColor ColorParameters::getResidueColor(QChar res, QChar consensus)
 {
     int i, j;
     QChar colorParRes;
-    char showRes = res.toAscii();
-    char showCon = consensus.toAscii();
+    char showRes = res.toLatin1();
+    char showCon = consensus.toLatin1();
     
     for(i = 0; i < colorPar.size(); i++)
     {
@@ -171,7 +171,7 @@ QColor ColorParameters::getResidueColor(QChar res, QChar consensus)
                 
                 for(j = 0; j < colorPar[i].consensusConditionList.size(); j++)
                 {
-                    char temp = colorPar[i].consensusConditionList[j].toAscii();
+                    char temp = colorPar[i].consensusConditionList[j].toLatin1();
                     if(consensus == colorPar[i].consensusConditionList[j])
                     {
                         return colorPar[i].color;
@@ -191,8 +191,8 @@ int ColorParameters::getResidueColorNum(QChar res, QChar consensus)
 {
     int i, j;
     QChar colorParRes;
-    char showRes = res.toAscii();
-    char showCon = consensus.toAscii();
+    char showRes = res.toLatin1();
+    char showCon = consensus.toLatin1();
     
     for(i = 0; i < colorPar.size(); i++)
     {
@@ -208,7 +208,7 @@ int ColorParameters::getResidueColorNum(QChar res, QChar consensus)
                 
                 for(j = 0; j < colorPar[i].consensusConditionList.size(); j++)
                 {
-                    char temp = colorPar[i].consensusConditionList[j].toAscii();
+                    char temp = colorPar[i].consensusConditionList[j].toLatin1();
                     if(consensus == colorPar[i].consensusConditionList[j])
                     {
                         return getIndexOfColor(colorPar[i].color);

@@ -1,3 +1,41 @@
+
+
+```bash
+conda create -n qt qt
+conda activate qt
+
+sed -i '' 's/include <QtGui>/include <QtWidgets>/g' *.cpp
+sed -i '' 's/toAscii/toLatin1/g' *.cpp
+sed -i '' $'s/#include <stdexcept>/#include <string>\\\n#include <stdexcept>/g' clustalW/general/VectorOutOfRange.h
+sed -i '' 's/QT += xml/QT += xml widgets/g' clustalx.pro
+
+qmake
+make
+
+mkdir App
+cp col*xml clustalx.hlp App/
+cp clustalx.app/Contents/MacOS/clustalx App/
+
+install_name_tool -change @rpath/libQt5Widgets.5.dylib $CONDA_PREFIX/lib/libQt5Widgets.5.dylib App/clustalx
+install_name_tool -change @rpath/libQt5Gui.5.dylib $CONDA_PREFIX/lib/libQt5Gui.5.dylib App/clustalx
+install_name_tool -change @rpath/libQt5Xml.5.dylib $CONDA_PREFIX/lib/libQt5Xml.5.dylib App/clustalx
+install_name_tool -change @rpath/libQt5Core.5.dylib $CONDA_PREFIX/lib/libQt5Core.5.dylib App/clustalx
+
+App/clustalx
+```
+
+
+
+
+
+
+
+
+
+
+
+# Old README
+
 Please see also ftp://ftp.ebi.ac.uk/pub/software/clustalw2/README
 
 HOWTO COMPILE THE SOURCE AND INSTALL

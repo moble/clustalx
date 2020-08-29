@@ -3,6 +3,7 @@
  * 
  * Copyright (c) 2007 Des Higgins, Julie Thompson and Toby Gibson.  
  */
+#include <string>
 #include <stdexcept>
 #include <exception>
 namespace clustalw

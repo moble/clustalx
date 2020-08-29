@@ -5,7 +5,7 @@
 #include <QGridLayout>
 #include <QSizePolicy>
 #include <QComboBox>
-#include <QtGui>
+#include <QtWidgets>
 #include <QLabel>
 #include <QString>
 #include <QMessageBox>

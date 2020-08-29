@@ -5,7 +5,7 @@
 TEMPLATE = app
 TARGET = clustalx
 CONFIG += release static
-QT += xml
+QT += xml widgets
 VERSION = 2.1
 win32 {
    DEFINES += OS_WINDOWS

@@ -18,7 +18,7 @@
 #include <QGridLayout>
 #include <QSizePolicy>
 #include <QComboBox>
-#include <QtGui>
+#include <QtWidgets>
 #include <QLabel>
 #include "SaveSeqFile.h"
 #include "clustalW/general/userparams.h"
